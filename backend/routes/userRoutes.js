@@ -6,8 +6,8 @@ const userRouter = express.Router()
 userRouter.post("/register",userController.registerUser)
 userRouter.post("/login",userController.loginUser)
 userRouter.get("/credits",userAuth,userController.userCredits)
-// userRouter.post("/pay-razor",userAuth,userController.paymentRazorpay)
-// userRouter.post("/verify-razor",userAuth,userController.verifyRazorpay)
+userRouter.post("/pay-razor",userAuth,userController.paymentRazorpay)
+userRouter.post("/verify-razor",userAuth,userController.verifyRazorpay)
 
 export default userRouter
 

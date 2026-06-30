@@ -166,4 +166,3 @@ export default { loginUser, registerUser ,userCredits,paymentRazorpay,verifyRazo
  
 
 
-export default { loginUser, registerUser ,userCredits}
