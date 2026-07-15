@@ -10,7 +10,7 @@ const Header = () => {
 
   const onClickHandler = () => {
     if (user) {
-      navigate('/mm');
+      navigate('/result');
     } else {
       setShowLogin(true);
     }
@@ -38,7 +38,7 @@ const Header = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2, delay: 0.4 }}
-        className="text-4xl max-w-[300px] sm:text-7xl sm:max-w-[590px] mx-auto mt-10 text-center"
+        className="text-4xl max-w-75 sm:text-7xl sm:max-w-147.5 mx-auto mt-10 text-center"
         // className="text-4xl max-w-[300px] sm:text-7xl sm:max-w-[590px] mx-auto mt-10 text-center"
       >
         Turn text to <span className="bg-linear-to-r from-rose-500 to-orange-400 bg-clip-text text-transparent">image</span> in seconds

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import Home from "./../src/pages/Home.jsx"
+import Result from "./../src/pages/Result.jsx"
 import Navbar from "./../src/components/navbar.jsx"
 import { Route,Routes } from 'react-router-dom'
 import Footer from './components/Footer.jsx'
@@ -21,6 +22,7 @@ const App = () => {
       {showLogin && <Login />}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/result" element={<Result />} />
       </Routes>
       <Footer />
     </div>
