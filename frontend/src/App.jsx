@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import Home from "./../src/pages/Home.jsx"
+import BuyCredit from "./../src/pages/BuyCredit.jsx"
 import Result from "./../src/pages/Result.jsx"
 import Navbar from "./../src/components/navbar.jsx"
 import { Route,Routes } from 'react-router-dom'
@@ -23,6 +24,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/result" element={<Result />} />
+        <Route path="/buy" element={<BuyCredit />} />
       </Routes>
       <Footer />
     </div>
